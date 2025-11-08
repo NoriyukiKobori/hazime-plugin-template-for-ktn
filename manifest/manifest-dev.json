@@ -1,0 +1,27 @@
+{
+  "manifest_version": 1,
+  "version": "1.0.0",
+  "type": "APP",
+  "name": {
+    "ja": "【dev】プラグインサンプル",
+    "en": "dev Plugin Sample"
+  },
+  "description": {
+    "ja": "これは開発用のサンプルプラグインです。",
+    "en": "This is a sample plugin for development."
+  },
+  "homepage_url": {
+    "ja": "https://example.com",
+    "en": "https://example.com"
+  },
+  "icon": "plugin-icon.png",
+  "desktop": {
+    "js": ["index.js"],
+    "css": []
+  },
+  "config": {
+    "html": "config/config.html",
+    "js": ["config/config.js"],
+    "css": []
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "hazime_kintone_plugin_template",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:dev": "node script/build.js dev",
+    "build:pro": "node script/build.js pro",
+    "build:svr": "node script/build.js svr",
+    "pack:dev": "node script/package.js dev",
+    "pack:pro": "node script/package.js pro",
+    "pack:svr": "node script/package.js svr"
+  },
+  "keywords": [
+    "kintone",
+    "plugin",
+    "template"
+  ],
+  "author": "NoriyukiKobori",
+  "license": "MIT",
+  "description": "kintone plugin template with TypeScript and Vite",
+  "devDependencies": {
+    "@kintone/dts-gen": "^8.1.2",
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "@kintone/rest-api-client": "^6.0.0",
+    "dompurify": "^3.3.0",
+    "kintone-ui-component": "^1.22.0"
+  }
+}

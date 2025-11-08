@@ -1,0 +1,27 @@
+{
+  "manifest_version": 1,
+  "version": "1.0.0",
+  "type": "APP",
+  "name": {
+    "ja": "【svr】プラグインサンプル",
+    "en": "svr Plugin Sample"
+  },
+  "description": {
+    "ja": "これは開発作業用のサンプルプラグインです。",
+    "en": "This is a sample plugin for development（testing）."
+  },
+  "homepage_url": {
+    "ja": "https://example.com",
+    "en": "https://example.com"
+  },
+  "icon": "plugin-icon.png",
+  "desktop": {
+    "js": ["https://127.0.0.1:5500/plugin-src/svr/index.js"],
+    "css": []
+  },
+  "config": {
+    "html": "config/config.html",
+    "js": ["https://127.0.0.1:5500/plugin-src/svr/config/config.js"],
+    "css": []
+  }
+}
