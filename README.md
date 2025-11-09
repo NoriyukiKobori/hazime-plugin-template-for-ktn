@@ -1,7 +1,10 @@
-# hazime kintone Plugin Template
+# hazime-plugin-template-for-ktn
 
 kintone プラグインの開発用テンプレートプロジェクトです。
 メインカスタマイズと設定画面を別々に開発でき、dev/pro/svr 環境ごとのビルド・パッケージングをサポートします。
+
+本プロジェクトはkintoneの非公式ツールです。サイボウズ株式会社とは関係ありません。
+「kintone」はサイボウズ株式会社の登録商標です。
 
 ## 依存パッケージインストール
 
