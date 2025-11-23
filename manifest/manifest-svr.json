@@ -17,11 +17,11 @@
   "icon": "plugin-icon.png",
   "desktop": {
     "js": ["https://127.0.0.1:5500/plugin-src/svr/index.js"],
-    "css": []
+    "css": ["https://127.0.0.1:5500/plugin-src/svr/main.css"]
   },
   "config": {
     "html": "config/config.html",
     "js": ["https://127.0.0.1:5500/plugin-src/svr/config/config.js"],
-    "css": []
+    "css": ["https://127.0.0.1:5500/plugin-src/svr/config/config.css"]
   }
 }

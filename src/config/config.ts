@@ -1,4 +1,5 @@
 import { Text, Button, Notification, Spinner } from 'kintone-ui-component';
+import './config.scss';
 // import { escapeHtml, unescapeHtml } from '../common/func';
 // import DOMPurify from 'dompurify';
 // サニタイズ処理が必要な場合は、escapeHtml, unescapeHtml, DOMPurify.sanitizeを適宜使うこと。
@@ -34,7 +35,8 @@ import { Text, Button, Notification, Spinner } from 'kintone-ui-component';
     // 保存ボタン
     const saveButton = new Button({
       text: '保存',
-      type: 'submit'
+      type: 'submit',
+      className: 'my-custom-button'
     });
     saveButton.style.marginTop = '10px';
     saveButton.style.marginBottom = '10px';

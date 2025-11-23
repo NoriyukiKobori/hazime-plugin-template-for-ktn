@@ -1,5 +1,6 @@
 import { Button, Spinner, Notification } from 'kintone-ui-component';
 import { KintoneRestAPIClient } from '@kintone/rest-api-client';
+import './main.scss';
 // import { escapeHtml, unescapeHtml } from '../common/func';
 // import DOMPurify from 'dompurify';
 // サニタイズ処理が必要な場合は、escapeHtml, unescapeHtml, DOMPurify.sanitizeを適宜使うこと。
@@ -19,7 +20,8 @@ import { KintoneRestAPIClient } from '@kintone/rest-api-client';
     }).open();
 
     const button = new Button({
-      text: 'test'
+      text: 'test',
+      className: 'my-custom-button'
     });
     button.addEventListener('click', async (e) => {
       const spinner = new Spinner({

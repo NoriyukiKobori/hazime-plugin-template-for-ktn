@@ -17,11 +17,11 @@
   "icon": "plugin-icon.png",
   "desktop": {
     "js": ["index.js"],
-    "css": []
+    "css": ["main.css"]
   },
   "config": {
     "html": "config/config.html",
     "js": ["config/config.js"],
-    "css": []
+    "css": ["config/config.css"]
   }
 }

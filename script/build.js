@@ -73,7 +73,9 @@ const copyFileSync = (src, dest) => {
 
 // plugin-src/{env} にコピー
 copyFileSync(path.join(DIST_MAIN, 'index.js'), path.join(PLUGIN_SRC, 'index.js'));
+copyFileSync(path.join(DIST_MAIN, 'main.css'), path.join(PLUGIN_SRC, 'main.css'));
 copyFileSync(path.join(DIST_CONFIG, 'config.js'), path.join(PLUGIN_SRC, 'config/config.js'));
+copyFileSync(path.join(DIST_CONFIG, 'config.css'), path.join(PLUGIN_SRC, 'config/config.css'));
 copyFileSync(path.join(SRC_CONFIG, 'config.html'), path.join(PLUGIN_SRC, 'config/config.html'));
 copyFileSync(path.join(__dirname, 'image/plugin-icon.png'), path.join(PLUGIN_SRC, 'plugin-icon.png'));
 
