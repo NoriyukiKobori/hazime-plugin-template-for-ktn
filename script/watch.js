@@ -36,15 +36,6 @@ const copyFileSync = (src, dest) => {
   console.log(`[COPY] ${path.relative(__dirname, src)} → ${path.relative(__dirname, dest)}`);
 };
 
-// 静的ファイルのコピー
-const copyStaticFiles = () => {
-  copyFileSync(path.join(SRC_CONFIG, 'config.html'), path.join(PLUGIN_SRC, 'config/config.html'));
-  copyFileSync(path.join(__dirname, 'image/plugin-icon.png'), path.join(PLUGIN_SRC, 'plugin-icon.png'));
-  if (MANIFEST_FILE_NAME) {
-    copyFileSync(path.join(MANIFEST_DIR, MANIFEST_FILE_NAME), path.join(PLUGIN_SRC, 'manifest.json'));
-  }
-};
-
 // ビルド成果物のコピー
 const copyBuildFiles = () => {
   copyFileSync(path.join(DIST_MAIN, 'index.js'), path.join(PLUGIN_SRC, 'index.js'));
@@ -52,10 +43,6 @@ const copyBuildFiles = () => {
   copyFileSync(path.join(DIST_CONFIG, 'config.js'), path.join(PLUGIN_SRC, 'config/config.js'));
   copyFileSync(path.join(DIST_CONFIG, 'config.css'), path.join(PLUGIN_SRC, 'config/config.css'));
 };
-
-// 初回の静的ファイルコピー
-console.log('[WATCH] 静的ファイルをコピー中...');
-copyStaticFiles();
 
 // 初回ビルド完了フラグ
 let initialBuildComplete = false;
