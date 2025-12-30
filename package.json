@@ -1,11 +1,12 @@
 {
   "name": "hazime_kintone_plugin_template",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "type": "module",
   "scripts": {
     "build:dev": "node script/build.js dev",
     "build:pro": "node script/build.js pro",
     "build:svr": "node script/build.js svr",
+    "watch": "node script/watch.js",
     "pack:dev": "node script/package.js dev",
     "pack:pro": "node script/package.js pro",
     "pack:svr": "node script/package.js svr"
