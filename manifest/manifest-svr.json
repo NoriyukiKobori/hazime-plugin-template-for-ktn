@@ -19,6 +19,10 @@
     "js": ["https://127.0.0.1:5500/plugin-src/svr/index.js"],
     "css": ["https://127.0.0.1:5500/plugin-src/svr/main.css"]
   },
+  "mobile": {
+    "js": ["https://127.0.0.1:5500/plugin-src/svr/index.js"],
+    "css": ["https://127.0.0.1:5500/plugin-src/svr/main.css"]
+  },
   "config": {
     "html": "config/config.html",
     "js": ["https://127.0.0.1:5500/plugin-src/svr/config/config.js"],
