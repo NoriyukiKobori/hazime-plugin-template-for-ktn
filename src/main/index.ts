@@ -11,7 +11,7 @@ import './main.scss';
   /** サンプルコードのコメントアウトを外して利用してください。
   console.log(PLUGIN_ID);
 
-  kintone.events.on('app.record.index.show', async (event) => {
+  kintone.events.on(['app.record.index.show', 'mobile.app.record.index.show'], async (event) => {
     const config = kintone.plugin.app.getConfig(PLUGIN_ID);
 
     new Notification({

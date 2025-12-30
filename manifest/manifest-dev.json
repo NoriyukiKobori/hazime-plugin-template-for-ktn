@@ -19,6 +19,10 @@
     "js": ["index.js"],
     "css": ["main.css"]
   },
+  "mobile": {
+    "js": ["index.js"],
+    "css": ["main.css"]
+  },
   "config": {
     "html": "config/config.html",
     "js": ["config/config.js"],

@@ -51,9 +51,31 @@ manifest配下の以下のファイルをプロジェクト用に編集してく
 
 src配下でコーディングします。
 
-- main: メインのカスタマイズ用
+- main: メインのカスタマイズ用（デスクトップとモバイル共通）
 - config: 設定画面用
 - common: 共通関数など
+
+**デスクトップ・モバイル対応について:**
+
+このテンプレートでは、デスクトップとモバイルのカスタマイズファイル（JS/CSS）は共通のファイルを使用します。
+デスクトップとモバイルで処理を切り分ける場合は、kintoneのイベント名を使って適宜分岐してください。
+
+```typescript
+// デスクトップ用イベント
+kintone.events.on('app.record.detail.show', (event) => {
+  // デスクトップのみの処理
+});
+
+// モバイル用イベント
+kintone.events.on('mobile.app.record.detail.show', (event) => {
+  // モバイルのみの処理
+});
+
+// デスクトップとモバイル両方に適用する場合
+kintone.events.on(['app.record.detail.show', 'mobile.app.record.detail.show'], (event) => {
+  // 共通処理
+});
+```
 
 ## 環境ごとのビルド
 
