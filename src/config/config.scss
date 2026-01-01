@@ -1,11 +1,119 @@
 // Config screen styles
 
-// サンプルコードのコメントアウトを外して利用してください。
-// $primary-color: #3498db;
-// $secondary-color: #2ecc71;
-// $tertiary-color: #f39c12;
-// $danger-color: #e74c3c;
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$tertiary-color: #f39c12;
+$danger-color: #e74c3c;
 
-// .my-custom-button {
-//   --kuc-button-background-color: #{$tertiary-color};
+// ===============================================
+// kintone UI Componentのカスタムスタイルをここに記述する
+// ===============================================
+
+// === Text ===
+.hazime-config-text1,
+.hazime-config-text2,
+.hazime-config-text3 {
+  --kuc-text-input-width: 300px;
+  // --kuc-text-input-height: 40px;
+  // --kuc-text-input-font-size: 16px;
+  // --kuc-text-input-color: #{$primary-color};
+}
+
+.hazime-config-row-text {
+  --kuc-text-input-width: 200px;
+  // --kuc-text-input-height: 30px;
+  // --kuc-text-input-font-size: 14px;
+  // --kuc-text-input-color: #{$primary-color};
+}
+
+// === TextArea ===
+.hazime-config-textarea {
+  --kuc-textarea-input-width: 800px;
+  // --kuc-textarea-input-color: #0011f9;
+  // --kuc-textarea-input-font-size: 16px;
+  // --kuc-textarea-input-height: 200px;
+}
+
+// === Dropdown ===
+.hazime-config-dropdown {
+  --kuc-dropdown-toggle-width: 300px;
+  // --kuc-dropdown-font-size: 16px;
+  // --kuc-dropdown-toggle-height: 40px;
+  // --kuc-dropdown-toggle-color: #{$primary-color};
+  // --kuc-dropdown-menu-color: #{$primary-color};
+  // --kuc-dropdown-menu-color-selected: #{$primary-color};
+  // --kuc-dropdown-menu-max-height: 300px;
+}
+
+// === RadioButton ===
+// .hazime-config-radiobutton {
+//   --kuc-radio-button-menu-width: 300px;
+//   --kuc-radio-button-menu-height: 200px;
+//   --kuc-radio-button-menu-font-size: 16px;
+//   --kuc-radio-button-menu-color: #ffa2a2;
+//   --kuc-radio-button-menu-color-hover: #ffeded;
+// }
+
+// === Checkbox ===
+// .hazime-config-checkbox {
+//   --kuc-checkbox-menu-width: 300px;
+//   --kuc-checkbox-menu-height: 200px;
+//   --kuc-checkbox-menu-font-size: 16px;
+//   --kuc-checkbox-menu-color: #ffa2a2;
+//   --kuc-checkbox-menu-color-hover: #ffeded;
+// }
+
+// === Combobox ===
+.hazime-config-row-combobox {
+  --kuc-combobox-toggle-width: 300px;
+  // --kuc-combobox-font-size: 16px;
+  // --kuc-combobox-toggle-height: 40px;
+  // --kuc-combobox-toggle-color: #ffa2a2;
+  // --kuc-combobox-menu-color: #ffa2a2;
+  // --kuc-combobox-menu-color-selected: #ffeded;
+  // --kuc-combobox-menu-max-height: 200px;
+}
+
+// === Table ===
+// .hazime-config-table {
+// --kuc-table-header-background-color: #f0f0f0;
+// --kuc-table-header-color: #333333;
+// --kuc-table-header-font-size: 14px;
+// --kuc-table-header-height: 40px;
+// --kuc-table-header-0-width: 2000px;
+// --kuc-table-header-width: auto;
+// --kuc-table-action-button-background-color: #a600f9;
+// --kuc-table-action-button-left: 0px;
+// --kuc-table-action-button-right: 0px;
+// }
+
+// === Button ===
+// .hazime-config-cancel-button {
+// --kuc-button-width: 200px;
+// --kuc-button-height: 20px;
+// --kuc-button-background-color: #{$danger-color};
+// --kuc-button-background-color-hover: #{$tertiary-color};
+// --kuc-button-background-color-active: #{$secondary-color};
+// --kuc-button-background-color-focus: #{$primary-color};
+// --kuc-button-font-size: 14px;
+// --kuc-button-text-color: #{$secondary-color};
+// }
+// .hazime-config-save-button {
+// --kuc-button-width: 200px;
+// --kuc-button-height: 20px;
+// --kuc-button-background-color: #{$danger-color};
+// --kuc-button-background-color-hover: #{$tertiary-color};
+// --kuc-button-background-color-active: #{$secondary-color};
+// --kuc-button-background-color-focus: #{$primary-color};
+// --kuc-button-font-size: 14px;
+// --kuc-button-text-color: #{$secondary-color};
+// }
+
+// === Tooltip ===
+// .hazime-config-tooltip {
+//   --kuc-tooltip-background-color: #217da8;
+//   --kuc-tooltip-color: #ffffff;
+//   --kuc-tooltip-font-size: 14px;
+//   --kuc-tooltip-height: auto;
+//   --kuc-tooltip-width: auto;
 // }
