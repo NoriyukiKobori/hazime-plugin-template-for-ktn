@@ -1,6 +1,6 @@
 {
   "name": "hazime_kintone_plugin_template",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "type": "module",
   "scripts": {
     "build:dev": "node script/build.js dev",
@@ -27,8 +27,6 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^6.0.0",
-    "dompurify": "^3.3.0",
-    "kintone-ui-component": "^1.22.0"
+    "kintone-ui-component": "^1.23.1"
   }
 }
