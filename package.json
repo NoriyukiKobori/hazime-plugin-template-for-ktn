@@ -27,8 +27,6 @@
     "vite": "^7.1.7"
   },
   "dependencies": {
-    "@kintone/rest-api-client": "^6.0.0",
-    "dompurify": "^3.3.0",
     "kintone-ui-component": "^1.23.1"
   }
 }

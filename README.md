@@ -157,10 +157,33 @@ npm run pack:pro
 npm run pack:svr
 ```
 
+## オプションパッケージ
+
+必要に応じて以下のパッケージを追加する。
+
+### @kintone/rest-api-client
+
+kintone REST APIクライアント
+
+```bash
+npm install @kintone/rest-api-client
+```
+
+- [GitHub](https://github.com/kintone/js-sdk) (MIT License)
+
+### DOMPurify
+
+XSS対策のためのHTMLサニタイズライブラリ
+
+```bash
+npm install dompurify
+npm install --save-dev @types/dompurify
+```
+
+- [GitHub](https://github.com/cure53/DOMPurify) (Apache-2.0 OR MPL-2.0)
+
 ## 使用ライブラリ
 
-- [@kintone/rest-api-client](https://github.com/kintone/js-sdk) (MIT License)
-- [DOMPurify](https://github.com/cure53/DOMPurify) (Apache-2.0 OR MPL-2.0)
 - [kintone-ui-component](https://github.com/kintone-labs/kintone-ui-component) (MIT License)
 
 ## 免責事項
