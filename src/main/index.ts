@@ -1,18 +1,30 @@
-import { Button, Spinner, Notification } from 'kintone-ui-component';
-import { KintoneRestAPIClient } from '@kintone/rest-api-client';
 import './main.scss';
-// import { escapeHtml, unescapeHtml } from '../common/func';
-// import DOMPurify from 'dompurify';
+// import { Button, Spinner, Notification } from 'kintone-ui-component';
+
+// Kintone REST API Clientを使用する場合パッケージを追加でインストールし、コメントアウトを外して利用する。
+// READMEも参照のこと。
+// import { KintoneRestAPIClient } from '@kintone/rest-api-client';
+
 // サニタイズ処理が必要な場合は、escapeHtml, unescapeHtml, DOMPurify.sanitizeを適宜使うこと。
+// import { escapeHtml, unescapeHtml } from '../common/func';
+// DomPurifyを使う場合は、パッケージを追加でインストールし、コメントアウトを外して利用する。
+// READMEも参照のこと。
+// import DOMPurify from 'dompurify';
 
 ((PLUGIN_ID) => {
   'use strict';
 
   /** サンプルコードのコメントアウトを外して利用してください。
-  console.log(PLUGIN_ID);
+  // console.log(PLUGIN_ID);
 
   kintone.events.on(['app.record.index.show', 'mobile.app.record.index.show'], async (event) => {
     const config = kintone.plugin.app.getConfig(PLUGIN_ID);
+    // console.log('config:', config);
+
+    // desktop / mobile 判定
+    // @ts-ignore
+    const isMobile = await kintone.isMobilePage();
+    console.log('isMobile:', isMobile);
 
     new Notification({
       text: config.text1,
@@ -37,7 +49,11 @@ import './main.scss';
         console.log(res);
       } catch (err) {
         console.error('err:' + err);
-        alert('error');
+        new Notification({
+          text: 'エラーが発生しました。' + err,
+          type: 'danger'
+        }).open();
+      } finally {
         spinner.close();
       }
     });
